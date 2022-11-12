@@ -10,13 +10,37 @@
   <meta name="author" content="Miguel Santos" />
   <meta name="keywords" content="Login, Cadastro, Logar, Entrar" />
   <meta name="description" content="Tela de Login!" />
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- TITLE -->
   <title>Document</title>
 
   <!-- TAILWIND -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'sans': ['Poppins', 'sans-serif'],
+        },
+        extend: {
+          colors: {
+            'text-base': '#afb6c2',
+            'text-title': '#d4ccb6',
+            'background': '#191816',
+            'form-background': '#24221f',
+            'primary-color': '#ffc632',
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body>
 </body>
 </html>
