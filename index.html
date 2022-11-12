@@ -15,9 +15,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   
   <!-- TITLE -->
-  <title>Document</title>
+  <title>Login</title>
 
   <!-- TAILWIND -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -41,6 +44,49 @@
   </script>
 </head>
 
-<body>
+<body class='bg-background px-5 py-10 grid'>
+
+  <main>
+    <header class="mb-10">
+      <a href="#">
+        <img src="assets/logo.svg" alt="Logo">
+      </a>
+    </header>
+
+    <form>
+      <div class="flex gap-2 mb-2">
+        <img src="assets/log-in.svg" alt="Login">
+        <h1 class="text-text-title font-semibold text-2xl">Faça seu login</h1>
+      </div>
+      <p class="text-text-base font-medium mb-10">Entre com suas informações de cadastro.</p>
+
+      <div class="flex flex-col gap-2 mb-6">
+        <label for="email" class="text-text-base font-semibold">Email</label>
+        <input class="bg-form-background px-4 py-3 rounded text-text-base font-medium focus:border-primary-color focus:border-2 focus:border-solid focus-within:border-[#868686] border-[1px] border-solid" type="email" name="email" id="email" placeholder="Digite seu email">
+      </div>
+
+      <div class="flex flex-col gap-2 mb-4">
+        <label for="password" class="text-text-base font-semibold">Password</label>
+        <input class="bg-form-background px-4 py-3 rounded text-text-base font-medium focus:border-primary-color focus:border-2 focus:border-solid focus-within:border-[#868686] border-[1px] border-solid" type="password" name="password" id="password" placeholder="Digite sua senha">
+      </div>
+
+      <div class="flex space-around justify-between items-center text-text-base">
+        <div class="flex items-center gap-2">
+          <input class="p-10" type="checkbox" name="rememberMe" id="rememberMe">
+          <label for="rememberMe">Lembre-me</label>
+        </div>
+        <a href="#" class="text-primary-color">Esqueci minha senha</a>
+      </div>
+
+
+
+    </form>
+
+    
+
+  </main>
+
+  <aside class="none"></aside>
+
 </body>
 </html>
