@@ -44,16 +44,16 @@
   </script>
 </head>
 
-<body class='bg-background px-5 py-10 grid'>
+<body class='bg-background grid md:grid-cols-2 md:pr-0 md:h-screen'>
 
-  <main>
-    <header class="mb-10">
+  <main class="px-4 pt-10">
+    <header class="mb-10 md:mb-18 lg:mb-20">
       <a href="#">
         <img src="assets/logo.svg" alt="Logo">
       </a>
     </header>
 
-    <form>
+    <form class="md:p-14 md:px-8 lg:px-14 lg:mx-10 m-auto md:bg-[#24221F] rounded">
       <div class="flex gap-2 mb-2">
         <img src="assets/log-in.svg" alt="Login">
         <h1 class="text-text-title font-semibold text-2xl">Faça seu login</h1>
@@ -78,10 +78,8 @@
         <a href="#" class="text-primary-color">Esqueci minha senha</a>
       </div>
 
-      <input class="bg-primary-color text-[#473404] w-full mb-4 py-4 text-lg cursor-pointer font-semibold rounded" type="submit" value="ENTRAR">
+      <input class="bg-primary-color text-[#473404] hover:bg-[#ffb111] w-full mb-4 py-4 text-lg cursor-pointer font-semibold rounded" type="submit" value="ENTRAR">
       <a href="#" class="text-primary-color flex justify-center gap-1">Não tem uma conta? <strong>Registre-se</strong></a>
-
-
 
     </form>
 
@@ -89,7 +87,7 @@
 
   </main>
 
-  <aside class="none"></aside>
+  <aside class="bg-[url('assets/side-image.jpg')] bg-cover bg-no-repeat"></aside>
 
 </body>
 </html>
